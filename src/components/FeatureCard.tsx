@@ -16,8 +16,8 @@ const StyledCard = styled(Card)(({  }) => ({
 }));
 
 const IconContainer = styled('div')(({  }) => ({
-  width: '30px',
-  height: '30px',
+  width: '40px',
+  height: '40px',
   borderRadius: '5px',
   backgroundColor: 'rgba(0, 0, 0, 0.10)',
   backdropFilter: 'blur(2px)',
