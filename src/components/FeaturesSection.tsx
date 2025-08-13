@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Typography, Box } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import FeatureCard from './FeatureCard';
 import CrossChainIcon from './icons/CrossChainIcon';
 import IdentityIcon from './icons/IdentityIcon';
 import SmartContractIcon from './icons/SmartContractIcon';
