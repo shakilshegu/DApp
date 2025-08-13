@@ -14,6 +14,7 @@ import FeatureShowcase from './components/FeatureShowcase';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import './App.css'
+import HowToGetPunk from './components/HowToGetPunk';
 
 const createEmotionCache = () => {
   return createCache({
@@ -38,6 +39,7 @@ const VetricLandingPage: React.FC = () => {
             <PricingSection />
             <Web3Banner />
             <FeatureShowcase />
+            <HowToGetPunk />
             <ContactSection />
           </main>
           <Footer />
