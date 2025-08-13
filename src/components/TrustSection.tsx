@@ -2,12 +2,12 @@ import React from 'react';
 import { Typography, Container, Stack } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
-const TrustContainer = styled('section')(({ theme }) => ({
+const TrustContainer = styled('section')(({ }) => ({
   padding: '60px 0',
   backgroundColor: '#07070a'
 }));
 
-const TrustTitle = styled(Typography)(({ theme }) => ({
+const TrustTitle = styled(Typography)(({ }) => ({
   fontFamily: 'Manrope, sans-serif',
   fontSize: '17.86px',
   fontWeight: 700,
@@ -16,7 +16,7 @@ const TrustTitle = styled(Typography)(({ theme }) => ({
   marginBottom: '37px'
 }));
 
-const LogosContainer = styled('div')(({ theme }) => ({
+const LogosContainer = styled('div')(({ }) => ({
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',

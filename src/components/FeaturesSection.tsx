@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Stack } from '@mui/material';
+import { Container } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import FeatureCard from './FeatureCard';
 import CrossChainIcon from './icons/CrossChainIcon';
@@ -9,7 +9,7 @@ import GovernanceIcon from './icons/GovernanceIcon';
 import TokenizationIcon from './icons/TokenizationIcon';
 import DataExchangeIcon from './icons/DataExchangeIcon';
 
-const FeaturesContainer = styled('section')(({ theme }) => ({
+const FeaturesContainer = styled('section')(({  }) => ({
   padding: '80px 0',
   backgroundColor: '#07070a'
 }));

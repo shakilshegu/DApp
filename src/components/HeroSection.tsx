@@ -2,27 +2,29 @@ import React from 'react';
 import { Typography, Button, Stack, Container } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import BlobShape from './icons/blob-shape';
+import BlobShape from './icons/BlobShape';
 
-const HeroContainer = styled('section')(({ theme }) => ({
+
+
+const HeroContainer = styled('section')(({  }) => ({
   position: 'relative',
   padding: '120px 0',
   background: '#07070a',
   overflow: 'hidden'
 }));
 
-const GlowEffect = styled('div')(({ theme }) => ({
-  position: 'absolute',
-  top: 0,
-  left: '5%',
-  width: '90%',
-  height: '634px',
-  background: 'radial-gradient(50% 50% at 50% 50%, #96ea63 0%, rgba(0, 0, 0, 0) 100%)',
-  opacity: 0.1,
-  zIndex: 0
-}));
+// const GlowEffect = styled('div')(({  }) => ({
+//   position: 'absolute',
+//   top: 0,
+//   left: '5%',
+//   width: '90%',
+//   height: '634px',
+//   background: 'radial-gradient(50% 50% at 50% 50%, #96ea63 0%, rgba(0, 0, 0, 0) 100%)',
+//   opacity: 0.1,
+//   zIndex: 0
+// }));
 
-const HeroTitle = styled(Typography)(({ theme }) => ({
+const HeroTitle = styled(Typography)(({  }) => ({
   fontSize: 'clamp(48px, 8vw, 85.32px)',
   fontWeight: 900,
   lineHeight: '1',
@@ -32,7 +34,7 @@ const HeroTitle = styled(Typography)(({ theme }) => ({
   textShadow: '0 0 40px rgba(150, 234, 99, 0.3)'
 }));
 
-const HeroSubtitle = styled(Typography)(({ theme }) => ({
+const HeroSubtitle = styled(Typography)(({  }) => ({
   fontSize: '21px',
   fontWeight: 400,
   color: '#d3d3d6',
@@ -42,7 +44,7 @@ const HeroSubtitle = styled(Typography)(({ theme }) => ({
   margin: '0 auto 52px'
 }));
 
-const PrimaryButton = styled(Button)(({ theme }) => ({
+const PrimaryButton = styled(Button)(({  }) => ({
   backgroundColor: '#96ea63',
   color: '#1e2f14',
   fontSize: '14px',
@@ -56,7 +58,7 @@ const PrimaryButton = styled(Button)(({ theme }) => ({
   }
 }));
 
-const SecondaryButton = styled(Button)(({ theme }) => ({
+const SecondaryButton = styled(Button)(({  }) => ({
   color: '#ffffff',
   fontSize: '14px',
   fontWeight: 400,

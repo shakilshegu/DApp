@@ -5,14 +5,14 @@ import VetricLogoIcon from './icons/VetricLogoIcon';
 import LanguageIcon from '@mui/icons-material/Language';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
-const StyledAppBar = styled(AppBar)(({ theme }) => ({
+const StyledAppBar = styled(AppBar)(({  }) => ({
   backgroundColor: '#000000 !important',
   backdropFilter: 'blur(10.9px)',
   borderBottom: '1px solid #212429',
   boxShadow: 'none'
 }));
 
-const NavButton = styled(Button)(({ theme }) => ({
+const NavButton = styled(Button)(({  }) => ({
   color: '#a6a7ad',
   fontSize: '14px',
   fontWeight: 400,
@@ -23,7 +23,7 @@ const NavButton = styled(Button)(({ theme }) => ({
   }
 }));
 
-const LoginButton = styled(Button)(({ theme }) => ({
+const LoginButton = styled(Button)(({  }) => ({
   color: '#ffffff',
   fontSize: '14px',
   fontWeight: 400,
@@ -33,7 +33,7 @@ const LoginButton = styled(Button)(({ theme }) => ({
   }
 }));
 
-const SignUpButton = styled(Button)(({ theme }) => ({
+const SignUpButton = styled(Button)(({  }) => ({
   backgroundColor: '#96ea63',
   color: '#11111c',
   fontSize: '14px',
@@ -46,7 +46,7 @@ const SignUpButton = styled(Button)(({ theme }) => ({
   }
 }));
 
-const LanguageButton = styled(IconButton)(({ theme }) => ({
+const LanguageButton = styled(IconButton)(({  }) => ({
   color: '#a6a7ad',
   borderRadius: '8px',
   border: '1px solid #4d4f5c',

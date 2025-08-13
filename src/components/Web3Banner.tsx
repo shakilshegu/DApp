@@ -3,12 +3,12 @@ import { Typography, Button, Stack, Container } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
-const BannerContainer = styled('section')(({ theme }) => ({
+const BannerContainer = styled('section')(({ }) => ({
   padding: '40px 0',
   backgroundColor: '#07070a'
 }));
 
-const BannerCard = styled('div')(({ theme }) => ({
+const BannerCard = styled('div')(({ }) => ({
   backgroundColor: '#0d0e14',
   border: '1px solid #212429',
   borderRadius: '16px',
@@ -28,7 +28,7 @@ const BannerCard = styled('div')(({ theme }) => ({
   }
 }));
 
-const BannerTitle = styled(Typography)(({ theme }) => ({
+const BannerTitle = styled(Typography)(({ }) => ({
   fontFamily: 'Blanc Groove, serif',
   fontSize: '30px',
   fontWeight: 900,
@@ -38,7 +38,7 @@ const BannerTitle = styled(Typography)(({ theme }) => ({
   zIndex: 1
 }));
 
-const BannerDescription = styled(Typography)(({ theme }) => ({
+const BannerDescription = styled(Typography)(({ }) => ({
   fontFamily: 'Manrope, sans-serif',
   fontSize: '16px',
   fontWeight: 400,
@@ -48,7 +48,7 @@ const BannerDescription = styled(Typography)(({ theme }) => ({
   zIndex: 1
 }));
 
-const BannerButton = styled(Button)(({ theme }) => ({
+const BannerButton = styled(Button)(({ }) => ({
   backgroundColor: '#96ea63',
   color: '#000000',
   fontSize: '16px',

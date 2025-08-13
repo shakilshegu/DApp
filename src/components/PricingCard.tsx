@@ -14,7 +14,7 @@ interface PricingCardProps {
   buttonText: string;
 }
 
-const StyledCard = styled(Card)<{ isPopular?: boolean }>(({ theme, isPopular }) => ({
+const StyledCard = styled(Card)<{ isPopular?: boolean }>(({  isPopular }) => ({
   backgroundColor: isPopular ? '#0d0e14' : 'rgba(0, 0, 0, 0.05)',
   backdropFilter: 'blur(25.8px)',
   border: '0.5px solid #ffffff',
@@ -37,7 +37,7 @@ const StyledCard = styled(Card)<{ isPopular?: boolean }>(({ theme, isPopular }) 
   })
 }));
 
-const PlanTitle = styled(Typography)(({ theme }) => ({
+const PlanTitle = styled(Typography)(({  }) => ({
   fontFamily: 'Manrope, sans-serif',
   fontSize: '20px',
   fontWeight: 600,
@@ -45,7 +45,7 @@ const PlanTitle = styled(Typography)(({ theme }) => ({
   marginBottom: '8px'
 }));
 
-const PlanPrice = styled(Typography)(({ theme }) => ({
+const PlanPrice = styled(Typography)(({  }) => ({
   fontFamily: 'Source Sans Pro, sans-serif',
   fontSize: '32px',
   fontWeight: 600,
@@ -53,7 +53,7 @@ const PlanPrice = styled(Typography)(({ theme }) => ({
   marginBottom: '16px'
 }));
 
-const PlanDescription = styled(Typography)(({ theme }) => ({
+const PlanDescription = styled(Typography)(({  }) => ({
   fontFamily: 'DM Sans, sans-serif',
   fontSize: '18px',
   fontWeight: 400,
@@ -61,7 +61,7 @@ const PlanDescription = styled(Typography)(({ theme }) => ({
   marginBottom: '24px'
 }));
 
-const PlanButton = styled(Button)<{ isPopular?: boolean }>(({ theme, isPopular }) => ({
+const PlanButton = styled(Button)<{ isPopular?: boolean }>(({isPopular }) => ({
   backgroundColor: isPopular ? '#96ea63' : 'transparent',
   color: isPopular ? '#1e2f14' : '#e8e9ea',
   border: isPopular ? 'none' : '1px solid rgba(255, 255, 255, 0.30)',
@@ -77,19 +77,19 @@ const PlanButton = styled(Button)<{ isPopular?: boolean }>(({ theme, isPopular }
   }
 }));
 
-const FeatureItem = styled(Stack)(({ theme }) => ({
+const FeatureItem = styled(Stack)(({  }) => ({
   alignItems: 'center',
   marginBottom: '8px'
 }));
 
-const FeatureText = styled(Typography)(({ theme }) => ({
+const FeatureText = styled(Typography)(({  }) => ({
   fontFamily: 'Manrope, sans-serif',
   fontSize: '16px',
   fontWeight: 400,
   color: '#ffffff'
 }));
 
-const PopularChip = styled(Chip)(({ theme }) => ({
+const PopularChip = styled(Chip)(({  }) => ({
   backgroundColor: '#96ea63',
   color: '#0d0e14',
   fontSize: '13px',

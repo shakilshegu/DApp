@@ -8,14 +8,14 @@ interface FeatureCardProps {
   description: string;
 }
 
-const StyledCard = styled(Card)(({ theme }) => ({
+const StyledCard = styled(Card)(({  }) => ({
   backgroundColor: 'transparent',
   border: 'none',
   boxShadow: 'none',
   padding: 0
 }));
 
-const IconContainer = styled('div')(({ theme }) => ({
+const IconContainer = styled('div')(({  }) => ({
   width: '30px',
   height: '30px',
   borderRadius: '5px',
@@ -27,7 +27,7 @@ const IconContainer = styled('div')(({ theme }) => ({
   justifyContent: 'center'
 }));
 
-const FeatureTitle = styled(Typography)(({ theme }) => ({
+const FeatureTitle = styled(Typography)(({  }) => ({
   fontFamily: 'Blanc Groove, serif',
   fontSize: '14px',
   fontWeight: 700,
@@ -35,7 +35,7 @@ const FeatureTitle = styled(Typography)(({ theme }) => ({
   marginBottom: '8px'
 }));
 
-const FeatureDescription = styled(Typography)(({ theme }) => ({
+const FeatureDescription = styled(Typography)(({  }) => ({
   fontFamily: 'Urbanist, sans-serif',
   fontSize: '12px',
   fontWeight: 500,

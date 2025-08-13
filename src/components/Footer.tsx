@@ -8,12 +8,12 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 
-const FooterContainer = styled('footer')(({ theme }) => ({
+const FooterContainer = styled('footer')(({  }) => ({
   padding: '60px 0 40px',
   backgroundColor: '#07070a'
 }));
 
-const FooterLink = styled(Typography)(({ theme }) => ({
+const FooterLink = styled(Typography)(({ }) => ({
   fontFamily: 'Manrope, sans-serif',
   fontSize: '14px',
   fontWeight: 400,
@@ -24,14 +24,14 @@ const FooterLink = styled(Typography)(({ theme }) => ({
   }
 }));
 
-const CopyrightText = styled(Typography)(({ theme }) => ({
+const CopyrightText = styled(Typography)(({  }) => ({
   fontFamily: 'Manrope, sans-serif',
   fontSize: '14px',
   fontWeight: 400,
   color: '#7a7b85'
 }));
 
-const StatusChip = styled(Chip)(({ theme }) => ({
+const StatusChip = styled(Chip)(({  }) => ({
   backgroundColor: 'transparent',
   border: '1px solid #4d4f5c',
   borderRadius: '34px',
@@ -44,7 +44,7 @@ const StatusChip = styled(Chip)(({ theme }) => ({
   }
 }));
 
-const SocialIcon = styled(IconButton)(({ theme }) => ({
+const SocialIcon = styled(IconButton)(({  }) => ({
   color: '#7a7b85',
   padding: '8px',
   '&:hover': {
@@ -53,7 +53,7 @@ const SocialIcon = styled(IconButton)(({ theme }) => ({
   }
 }));
 
-const StatusDot = styled('div')(({ theme }) => ({
+const StatusDot = styled('div')(({  }) => ({
   width: '6px',
   height: '6px',
   borderRadius: '50%',

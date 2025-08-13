@@ -1,15 +1,14 @@
 import React from 'react';
 import { Typography, Container, Stack, Card, CardContent, Chip } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import CodeIcon from '@mui/icons-material/Code';
 import GroupAddIcon from '@mui/icons-material/GroupAdd';
 
-const ShowcaseContainer = styled('section')(({ theme }) => ({
+const ShowcaseContainer = styled('section')(({ }) => ({
   padding: '80px 0',
   backgroundColor: '#07070a'
 }));
 
-const ShowcaseTitle = styled(Typography)(({ theme }) => ({
+const ShowcaseTitle = styled(Typography)(({ }) => ({
   fontFamily: 'Manrope, sans-serif',
   fontSize: '40px',
   fontWeight: 700,
@@ -19,7 +18,7 @@ const ShowcaseTitle = styled(Typography)(({ theme }) => ({
   marginBottom: '16px'
 }));
 
-const ShowcaseSubtitle = styled(Typography)(({ theme }) => ({
+const ShowcaseSubtitle = styled(Typography)(({  }) => ({
   fontFamily: 'DM Sans, sans-serif',
   fontSize: '18px',
   fontWeight: 400,
@@ -69,7 +68,7 @@ const BentoGrid = styled('div')(({ theme }) => ({
   }
 }));
 
-const FeatureCard = styled(Card)(({ theme }) => ({
+const FeatureCard = styled(Card)(({ }) => ({
   backgroundColor: '#0d0e14',
   border: '1px solid #212429',
   borderRadius: '16px',
@@ -77,7 +76,7 @@ const FeatureCard = styled(Card)(({ theme }) => ({
   minHeight: '300px'
 }));
 
-const CardTitle = styled(Typography)(({ theme }) => ({
+const CardTitle = styled(Typography)(({  }) => ({
   fontFamily: 'Manrope, sans-serif',
   fontSize: '20px',
   fontWeight: 700,
@@ -86,7 +85,7 @@ const CardTitle = styled(Typography)(({ theme }) => ({
   marginBottom: '16px'
 }));
 
-const CardDescription = styled(Typography)(({ theme }) => ({
+const CardDescription = styled(Typography)(({  }) => ({
   fontFamily: 'Manrope, sans-serif',
   fontSize: '15px',
   fontWeight: 400,
@@ -94,7 +93,7 @@ const CardDescription = styled(Typography)(({ theme }) => ({
   marginBottom: '24px'
 }));
 
-const CodeBlock = styled('pre')(({ theme }) => ({
+const CodeBlock = styled('pre')(({  }) => ({
   fontFamily: 'Manrope, sans-serif',
   fontSize: '12px',
   fontWeight: 400,
@@ -107,14 +106,14 @@ const CodeBlock = styled('pre')(({ theme }) => ({
   margin: '16px 0'
 }));
 
-const TagGrid = styled('div')(({ theme }) => ({
+const TagGrid = styled('div')(({  }) => ({
   display: 'grid',
   gridTemplateColumns: 'repeat(2, 1fr)',
   gap: '12px',
   marginTop: '16px'
 }));
 
-const TagChip = styled(Chip)(({ theme }) => ({
+const TagChip = styled(Chip)(({  }) => ({
   backgroundColor: 'rgba(255, 255, 255, 0.05)',
   color: '#ffffff',
   fontSize: '12px',
