@@ -39,75 +39,77 @@ const theme = createTheme({
     divider: '#212429'
   },
   typography: {
-    fontFamily: 'Manrope, sans-serif',
+    // Base font family - using Bitcount Single as the primary font
+    fontFamily: 'Bitcount Single, Inter, Manrope, monospace',
+    
     h1: {
-      fontFamily: 'Blanc Groove, serif',
+      fontFamily: 'Bitcount Single, monospace', // Changed to Bitcount Single
       fontSize: '85.32px',
       fontWeight: 900,
       lineHeight: '85.32px',
       color: '#ffffff'
     },
     h2: {
-      fontFamily: 'Manrope, sans-serif',
+      fontFamily: 'Bitcount Single, monospace', // Changed to Bitcount Single
       fontSize: '40px',
       fontWeight: 700,
       lineHeight: '48px',
       color: '#ffffff'
     },
     h3: {
-      fontFamily: 'Manrope, sans-serif',
+      fontFamily: 'Bitcount Single, monospace', // Changed to Bitcount Single
       fontSize: '30px',
-      fontWeight: 900,
+      fontWeight: 600,
       color: '#ffffff'
     },
     h4: {
-      fontFamily: 'Manrope, sans-serif',
+      fontFamily: 'Bitcount Single, monospace', // Changed to Bitcount Single
       fontSize: '20px',
-      fontWeight: 700,
+      fontWeight: 500,
       lineHeight: '22.40px',
       color: '#ffffff'
     },
     h5: {
-      fontFamily: 'Blanc Groove, serif',
+      fontFamily: 'Bitcount Single, monospace', // Changed to Bitcount Single
       fontSize: '14px',
-      fontWeight: 700,
-      color: '#ffffff'
-    },
-    h6: {
-      fontFamily: 'Manrope, sans-serif',
-      fontSize: '16px',
       fontWeight: 600,
       color: '#ffffff'
     },
+    h6: {
+      fontFamily: 'Bitcount Single, monospace', // Changed to Bitcount Single
+      fontSize: '16px',
+      fontWeight: 500,
+      color: '#ffffff'
+    },
     body1: {
-      fontFamily: 'DM Sans, sans-serif',
+      fontFamily: 'Bitcount Single, monospace', // Changed to Bitcount Single
       fontSize: '18px',
       fontWeight: 400,
       color: '#a4a7ae'
     },
     body2: {
-      fontFamily: 'Manrope, sans-serif',
+      fontFamily: 'Bitcount Single, monospace', // Changed to Bitcount Single
       fontSize: '15px',
       fontWeight: 400,
       color: '#a6a7ad'
     },
     subtitle1: {
-      fontFamily: 'Manrope, sans-serif',
+      fontFamily: 'Bitcount Single, monospace', // Changed to Bitcount Single
       fontSize: '21px',
-      fontWeight: 400,
+      fontWeight: 500,
       color: '#d3d3d6'
     },
     subtitle2: {
-      fontFamily: 'Urbanist, sans-serif',
+      fontFamily: 'Bitcount Single, monospace', // Changed to Bitcount Single
       fontSize: '12px',
       fontWeight: 500,
       lineHeight: '16px',
       color: '#d3d3d6'
     },
     button: {
-      fontFamily: 'Manrope, sans-serif',
+      fontFamily: 'Bitcount Single, monospace', // Changed to Bitcount Single
       fontSize: '16px',
-      fontWeight: 400,
+      fontWeight: 500,
       textTransform: 'none'
     }
   },

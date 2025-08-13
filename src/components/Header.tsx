@@ -6,7 +6,7 @@ import LanguageIcon from '@mui/icons-material/Language';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 const StyledAppBar = styled(AppBar)(({ theme }) => ({
-  backgroundColor: 'rgba(7, 7, 10, 0.8)',
+  backgroundColor: '#000000 !important',
   backdropFilter: 'blur(10.9px)',
   borderBottom: '1px solid #212429',
   boxShadow: 'none'
@@ -67,11 +67,11 @@ const ToolbarContainer = styled(Toolbar)({
 
 const Header: React.FC = () => {
   return (
-    <StyledAppBar position="sticky">
+    <StyledAppBar position="sticky" elevation={0} color="transparent">
       <ToolbarContainer className="px-8 lg:px-40">
         <Stack direction="row" alignItems="center" spacing={1} className="mr-auto">
           <VetricLogoIcon width={24} height={24} color="#96ea63" />
-          <span className="text-white font-semibold text-lg ml-2">VETRIC</span>
+          <span className="text-white font-semibold text-lg ml-2">D-App</span>
         </Stack>
         
         <Stack direction="row" spacing={4} className="mx-auto">

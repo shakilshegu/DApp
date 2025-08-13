@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap');
@@ -18,7 +19,7 @@
 
 /* Custom font for headings */
 @font-face {
-  font-family: 'Blanc Groove';
+  font-family: 'Bitcount Single';
   font-weight: 900;
   font-display: swap;
   src: local('Arial Black'), local('Arial-Black'), sans-serif;

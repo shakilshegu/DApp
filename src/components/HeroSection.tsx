@@ -23,7 +23,6 @@ const GlowEffect = styled('div')(({ theme }) => ({
 }));
 
 const HeroTitle = styled(Typography)(({ theme }) => ({
-  fontFamily: 'Blanc Groove, serif',
   fontSize: 'clamp(48px, 8vw, 85.32px)',
   fontWeight: 900,
   lineHeight: '1',
@@ -34,7 +33,6 @@ const HeroTitle = styled(Typography)(({ theme }) => ({
 }));
 
 const HeroSubtitle = styled(Typography)(({ theme }) => ({
-  fontFamily: 'Manrope, sans-serif',
   fontSize: '21px',
   fontWeight: 400,
   color: '#d3d3d6',
@@ -84,12 +82,12 @@ const HeroSection: React.FC = () => {
       </div>
       <Container maxWidth="lg" style={{ position: 'relative', zIndex: 1 }}>
         <Stack alignItems="center" spacing={4}>
-          <HeroTitle>
+          <HeroTitle variant="h1">
             Build the Future<br />
-            with Web
+            with Web3
           </HeroTitle>
           
-          <HeroSubtitle>
+          <HeroSubtitle variant="subtitle1">
             Discover how we can help you connect with the next generation of the internet.
           </HeroSubtitle>
           
