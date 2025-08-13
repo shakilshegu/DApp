@@ -4,6 +4,7 @@ import { styled } from '@mui/material/styles';
 import VetricLogoIcon from './icons/VetricLogoIcon';
 import LanguageIcon from '@mui/icons-material/Language';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 
 const StyledAppBar = styled(AppBar)(({  }) => ({
   backgroundColor: '#000000 !important',
@@ -23,24 +24,17 @@ const NavButton = styled(Button)(({  }) => ({
   }
 }));
 
-const LoginButton = styled(Button)(({  }) => ({
-  color: '#ffffff',
-  fontSize: '14px',
-  fontWeight: 400,
-  textTransform: 'none',
-  '&:hover': {
-    backgroundColor: 'transparent'
-  }
-}));
-
-const SignUpButton = styled(Button)(({  }) => ({
+const ConnectWalletButton = styled(Button)(({  }) => ({
   backgroundColor: '#96ea63',
   color: '#11111c',
   fontSize: '14px',
-  fontWeight: 400,
+  fontWeight: 500,
   textTransform: 'none',
   borderRadius: '8px',
-  padding: '8px 16px',
+  padding: '10px 20px',
+  display: 'flex',
+  alignItems: 'center',
+  gap: '8px',
   '&:hover': {
     backgroundColor: '#7bc94a'
   }
@@ -57,15 +51,20 @@ const LanguageButton = styled(IconButton)(({  }) => ({
 }));
 
 const ToolbarContainer = styled(Toolbar)({
-  maxWidth: '1280px', // match your layout width
+  maxWidth: '1280px',
   margin: '0 auto',
   width: '100%',
-  padding: '0 2rem', // side padding
+  padding: '0 2rem',
   display: 'flex',
   justifyContent: 'space-between'
 });
 
 const Header: React.FC = () => {
+  const handleConnectWallet = () => {
+    // Add your wallet connection logic here
+    console.log('Connecting wallet...');
+  };
+
   return (
     <StyledAppBar position="sticky" elevation={0} color="transparent">
       <ToolbarContainer className="px-8 lg:px-40">
@@ -82,8 +81,10 @@ const Header: React.FC = () => {
         </Stack>
         
         <Stack direction="row" alignItems="center" spacing={2}>
-          <LoginButton>Login</LoginButton>
-          <SignUpButton>Sign up</SignUpButton>
+          <ConnectWalletButton onClick={handleConnectWallet}>
+            <AccountBalanceWalletIcon fontSize="small" />
+            Connect Wallet
+          </ConnectWalletButton>
           <LanguageButton>
             <LanguageIcon fontSize="small" />
             <KeyboardArrowDownIcon fontSize="small" />
