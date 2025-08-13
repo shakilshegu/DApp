@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  margin: auto;
+}
+
+/* Custom font for headings */
+@font-face {
+  font-family: 'Blanc Groove';
+  font-weight: 900;
+  font-display: swap;
+  src: local('Arial Black'), local('Arial-Black'), sans-serif;
+}
+
+/* Custom utilities */
+@utility glow-green {
+  filter: drop-shadow(0 0 20px rgba(150, 234, 99, 0.3));
+}
+
+@utility backdrop-blur-custom {
+  backdrop-filter: blur(25.8px);
+}
+
+@utility gradient-glow {
+  background: radial-gradient(50% 50% at 50% 50%, #96ea63 0%, rgba(0, 0, 0, 0) 100%);
+}

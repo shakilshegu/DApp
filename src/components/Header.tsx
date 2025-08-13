@@ -1,0 +1,97 @@
+import React from 'react';
+import { AppBar, Toolbar, Button, Stack, IconButton } from '@mui/material';
+import { styled } from '@mui/material/styles';
+import VetricLogoIcon from './icons/VetricLogoIcon';
+import LanguageIcon from '@mui/icons-material/Language';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+
+const StyledAppBar = styled(AppBar)(({ theme }) => ({
+  backgroundColor: 'rgba(7, 7, 10, 0.8)',
+  backdropFilter: 'blur(10.9px)',
+  borderBottom: '1px solid #212429',
+  boxShadow: 'none'
+}));
+
+const NavButton = styled(Button)(({ theme }) => ({
+  color: '#a6a7ad',
+  fontSize: '14px',
+  fontWeight: 400,
+  textTransform: 'none',
+  '&:hover': {
+    color: '#ffffff',
+    backgroundColor: 'transparent'
+  }
+}));
+
+const LoginButton = styled(Button)(({ theme }) => ({
+  color: '#ffffff',
+  fontSize: '14px',
+  fontWeight: 400,
+  textTransform: 'none',
+  '&:hover': {
+    backgroundColor: 'transparent'
+  }
+}));
+
+const SignUpButton = styled(Button)(({ theme }) => ({
+  backgroundColor: '#96ea63',
+  color: '#11111c',
+  fontSize: '14px',
+  fontWeight: 400,
+  textTransform: 'none',
+  borderRadius: '8px',
+  padding: '8px 16px',
+  '&:hover': {
+    backgroundColor: '#7bc94a'
+  }
+}));
+
+const LanguageButton = styled(IconButton)(({ theme }) => ({
+  color: '#a6a7ad',
+  borderRadius: '8px',
+  border: '1px solid #4d4f5c',
+  padding: '8px',
+  '&:hover': {
+    backgroundColor: 'rgba(255, 255, 255, 0.05)'
+  }
+}));
+
+const ToolbarContainer = styled(Toolbar)({
+  maxWidth: '1280px', // match your layout width
+  margin: '0 auto',
+  width: '100%',
+  padding: '0 2rem', // side padding
+  display: 'flex',
+  justifyContent: 'space-between'
+});
+
+const Header: React.FC = () => {
+  return (
+    <StyledAppBar position="sticky">
+      <ToolbarContainer className="px-8 lg:px-40">
+        <Stack direction="row" alignItems="center" spacing={1} className="mr-auto">
+          <VetricLogoIcon width={24} height={24} color="#96ea63" />
+          <span className="text-white font-semibold text-lg ml-2">VETRIC</span>
+        </Stack>
+        
+        <Stack direction="row" spacing={4} className="mx-auto">
+          <NavButton>Home</NavButton>
+          <NavButton>Pricing</NavButton>
+          <NavButton>Features</NavButton>
+          <NavButton>Contact</NavButton>
+        </Stack>
+        
+        <Stack direction="row" alignItems="center" spacing={2}>
+          <LoginButton>Login</LoginButton>
+          <SignUpButton>Sign up</SignUpButton>
+          <LanguageButton>
+            <LanguageIcon fontSize="small" />
+            <KeyboardArrowDownIcon fontSize="small" />
+          </LanguageButton>
+        </Stack>
+      </ToolbarContainer>
+    </StyledAppBar>
+  );
+};
+
+export default Header;
